@@ -35,11 +35,13 @@ const Home = () => {
             const recipientEmail = "mubaraqadeniyi159@gmail.com";
             const mailtoLink = `mailto:${recipientEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
             window.location.href = mailtoLink;
+            setName("");
+            setMessage("");
+            setSenderEmail("");
+            setSubject("");
         } catch(error){
             console.error("Error constructing or navigating to mailto link:", error);
             toast.error("Could not open your gmail.");
-            setloading(false);
-            return;
         } finally{
             setloading(false)
         }
@@ -54,7 +56,7 @@ const Home = () => {
                 <div className="grid mt-20 items-center gap-12 md:gap-0 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 h-full">
                     {/* <p className="px-3 py-1 w-max bg-green-200 text-emerald-950 text-[12px] font-medium rounded-full">Full-Stack Developer</p> */}
                     <div className="flex flex-col items-center md:items-start lg:items-start gap-7 text-center md:text-start lg:text-start">
-                        <h1 className="text-4xl text-black flex flex-col font-bold">
+                        <h1 className="text-3xl text-black flex flex-col font-bold">
                             <span>Hi, I'm </span>
                             <span className="text-green-900">Mubaraq Allamalyekeen</span>
                         </h1>
@@ -99,7 +101,7 @@ const Home = () => {
                         </div>
                     </div>
 
-                    <div className='px-5 py-6 flex flex-col gap-3 rounded-r rounded-b-lg shadow-2xl border border-green-300' data-aos="fade-left">
+                    <div className='px-5 py-6 flex flex-col gap-3 rounded-r rounded-b-lg shadow-2xl border border-green-300' data-aos="fade-up">
                         <div className="flex flex-col gap-3 items-center justify-center">
                             <div className="rounded-full bg-emerald-900 p-3 w-max">
                                 <GlobeIcon  className="text-green-200 size-5"/>
@@ -167,19 +169,19 @@ const Home = () => {
                 </div>
 
                 <div className="gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
-                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-left">
+                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
                             <h1 className="text-2xl font-semibold text-green-500">Frontend Development</h1>
                             <p className="text-[16px] text-center">HTML, CSS, Javascript, ReactJS, Typescript</p>
                         </div>
                     </div>
-                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-left">
+                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
                             <h1 className="text-2xl font-semibold text-green-500">Backend Development</h1>
                             <p className="text-[16px] text-center">NodeJS, ExpressJS</p>
                         </div>
                     </div>
-                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-left">
+                    <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
                             <h1 className="text-2xl font-semibold text-green-500">Database</h1>
                             <p className="text-[16px] text-center">MongoDB</p>
