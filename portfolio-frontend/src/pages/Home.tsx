@@ -1,4 +1,4 @@
-import Header from "../myComponent/headerr"
+import Header from "../myComponent/header"
 import { useEffect, useState, type ChangeEvent } from "react"
 import { projectCardDetails } from "../myComponent/data"
 import { ArrowBigRightDash, Code, Facebook, FolderGit, Github, GlobeIcon, NetworkIcon, Send, Twitter, } from "lucide-react"
