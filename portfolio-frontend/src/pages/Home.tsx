@@ -1,4 +1,4 @@
-import Header from "../myComponent/header"
+import Header from "../myComponent/headerr"
 import { useEffect, useState, type ChangeEvent } from "react"
 import { projectCardDetails } from "../myComponent/data"
 import { ArrowBigRightDash, Code, Facebook, FolderGit, Github, GlobeIcon, NetworkIcon, Send, Twitter, } from "lucide-react"
@@ -35,7 +35,6 @@ const Home = () => {
             const recipientEmail = "mubaraqadeniyi159@gmail.com";
             const mailtoLink = `mailto:${recipientEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
             window.location.href = mailtoLink;
-            setloading(false);
         } catch(error){
             console.error("Error constructing or navigating to mailto link:", error);
             toast.error("Could not open your gmail.");
@@ -261,7 +260,7 @@ const Home = () => {
         <footer className="w-full h-max bg-green-100" id="Footer">
             <div className="px-5 flex flex-col items-center gap-1 py-7 md:px-20 lg:px-20">
                     <h1 className="font-semibold font-mono text-2xl tracking-tight">MrMay</h1>
-                    <p className="text-sm text-center leading-5">Copyright © 2025 Mubaraq Allamalyekeen. All Rights Reserved.</p>
+                    <p className="text-sm text-center leading-5">Copyright © 2025, Mubaraq Allamalyekeen. All Rights Reserved.</p>
             </div>
         </footer>
 
