@@ -171,19 +171,19 @@ const Home = () => {
                 <div className="gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
                     <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
-                            <h1 className="text-2xl font-semibold text-green-500">Frontend Development</h1>
+                            <h1 className="text-2xl font-semibold text-center text-green-500">Frontend Development</h1>
                             <p className="text-[16px] text-center">HTML, CSS, Javascript, ReactJS, Typescript</p>
                         </div>
                     </div>
                     <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
-                            <h1 className="text-2xl font-semibold text-green-500">Backend Development</h1>
+                            <h1 className="text-2xl font-semibold text-center text-green-500">Backend Development</h1>
                             <p className="text-[16px] text-center">NodeJS, ExpressJS</p>
                         </div>
                     </div>
                     <div className='px-5 py-5 flex flex-col gap-3 rounded-r rounded-b-lg shadow-sm shadow-emerald-900' data-aos="fade-up">
                         <div className="flex flex-col gap-2 items-center justify-center text-white">
-                            <h1 className="text-2xl font-semibold text-green-500">Database</h1>
+                            <h1 className="text-2xl font-semibold text-center text-green-500">Database</h1>
                             <p className="text-[16px] text-center">MongoDB</p>
                         </div>
                     </div>
