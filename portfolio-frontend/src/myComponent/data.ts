@@ -47,7 +47,7 @@ export const projectCardDetails = [
         stack: "HTML",stack2: "CSS",stack3: "Javascript",
         parag: "A website built for a team Management firm",
         code: "https://github.com/iconicconcept",
-        live: "https://iconicconcept.github.io/managing-team/"
+        live: "https://iconicconcept.github.io/managing-team.io/"
     },
     {
         id: "6",
