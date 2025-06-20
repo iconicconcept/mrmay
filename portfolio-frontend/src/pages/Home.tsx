@@ -65,7 +65,7 @@ const Home = () => {
                             UI's into functional web application that has real-world impact.
                         </p>
                         <div className="flex w-max flex-row justify-center md:justify-start lg:justify-start gap-3">
-                            <button className="px-4 text-white py-2 rounded-[7px] font-semibold cursor-pointer bg-green-800">Check Resume</button>
+                            <button className="px-4 text-white py-2 rounded-[7px] font-semibold cursor-pointer bg-green-800"><a href="/resume.png" download>Check Resume</a></button>
                             <button className="px-4 text-white py-2 rounded-[7px] font-semibold cursor-pointer bg-green-500"><Link to="Contact" smooth={true} duration={500}>Contact Me</Link></button>
                         </div>
                     </div>
