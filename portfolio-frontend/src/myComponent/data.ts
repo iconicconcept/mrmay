@@ -22,7 +22,7 @@ export const projectCardDetails = [
     stack3: "Tailwindcss",
     parag: "An E-commerce store for a fast fashion brand",
     code: "https://github.com/iconicconcept",
-    live: "https://trackstore.netlify.app",
+    live: "https://trackstores.netlify.app",
   },
   {
     id: "3",
