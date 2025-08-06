@@ -1,7 +1,7 @@
 import Header from "../myComponent/header"
 import { useEffect, useState, type ChangeEvent } from "react"
 import { projectCardDetails } from "../myComponent/data"
-import { ArrowBigRightDash, Code, Facebook, FolderGit, Github, GlobeIcon, NetworkIcon, Send, Twitter, } from "lucide-react"
+import { ArrowRight, Code, Facebook, FolderGit, Github, GlobeIcon, NetworkIcon, Send, Twitter, } from "lucide-react"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import { Link } from "react-scroll"
@@ -60,8 +60,8 @@ const Home = () => {
                             <span>Hi, I'm </span>
                             <span className="text-green-900">Mubaraq Allamalyekeen</span>
                         </h1>
-                        <p>I am a seasoned Full-Stack Developer with hands-on experience building high quality,
-                            robust and scalable digital solutions. I specialized in <span className="font-medium">Frontend development</span> turning complex 
+                        <p>I am a seasoned <span className="font-medium">Full-Stack Developer</span> with hands-on experience building high quality,
+                            robust and scalable digital solutions. I specialized in <span className="font-medium">Frontend development</span>, turning complex 
                             UI's into functional web application that has real-world impact.
                         </p>
                         <div className="flex w-max flex-row justify-center md:justify-start lg:justify-start gap-3">
@@ -71,7 +71,7 @@ const Home = () => {
                     </div>
                     <div className="flex justify-center items-center md:ml-12 lg:ml-12">
                         <div className="h-74 w-64 border-2 border-green-500 rounded-2xl flex justify-center items-center">
-                            <div className="bg-green-800 h-70 w-60 rounded-2xl ">
+                            <div className="bg-green-500 h-70 w-60 rounded-2xl ">
                                 <img src="/user.jpg" className="h-full rounded-2xl" alt="image" />
                             </div>
                         </div>
@@ -137,19 +137,19 @@ const Home = () => {
                         <div key={item.id}>
                             <div className='border h-max md:h-93 lg:h-93 px-5 py-6 flex flex-col justify-between rounded-r rounded-b-lg bg-white' data-aos="fade-up">
                                 {/* <div className="w-full cover h-20"> */}
-                                    <img src={item.image} alt={item.alt} className="w-full h-35 object-cover border-4 rounded border-green-900" />
+                                    <img src={item.image} alt={item.alt} className="w-full h-35 object-cover border-3 rounded border-green-600" />
                                 {/* </div> */}
                                 <div className="flex flex-col gap-2 mt-2">
                                     <h1 className="font-semibold text-2xl">{item.head}</h1>
                                     <p className="text-sm ">{item.parag}</p>
                                     <div className="flex gap-2 text-center justify-start mt-1">
-                                        <p className="px-2 py-1 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-full">{item.stack}</p>
-                                        <p className="px-2 py-1 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-full">{item.stack2}</p>
-                                        <p className="px-2 py-1 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-full">{item.stack3}</p>
+                                        <p className="px-2 py-0.5 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-sm">{item.stack}</p>
+                                        <p className="px-2 py-0.5 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-sm">{item.stack2}</p>
+                                        <p className="px-2 py-0.5 bg-green-300 text-emerald-950 text-[12px] font-medium rounded-sm">{item.stack3}</p>
                                     </div>
                                     <div className="flex gap-2 mt-3">
-                                        <button className="px-5 rounded-[8px] font-normal py-2 curosr-pointer bg-emerald-950 text-white"><a href={item.code} target="_blank" className="flex gap-2 items-center"><FolderGit className="size-4" /> Code</a></button>
-                                        <button className="px-5 rounded-[8px] font-normal border py-2 curosr-pointer bg-green-500 text-white"><a href={item.live} target="_blank" className="flex gap-1 items-center"><ArrowBigRightDash className="size-5" /> Live</a></button>
+                                        <button className="px-5 rounded-[8px] font-normal py-2 curosr-pointer bg-emerald-950 text-white"><a href={item.code} target="_blank" className="flex gap-2 items-center"><FolderGit className="size-3 mt-1" /> Code</a></button>
+                                        <button className="px-5 rounded-[8px] font-normal border py-2 curosr-pointer bg-green-600 text-white flex items-center gap-1"><a href={item.live} target="_blank" className="flex gap-1 items-center">Live<ArrowRight className="size-4 mt-1" /></a></button>
                                     </div>
                                 </div>
                             </div>
@@ -164,8 +164,8 @@ const Home = () => {
         <section className="w-full py-7 md:py-10 lg:py-10 px-5 md:px-20 lg:px-20 h-max bg-green-100" id="Skills">
             <div className="px-5 flex flex-col gap-7 py-10 md:px-20 lg:px-20 md:py-10 lg:py-10 bg-emerald-950 rounded-2xl">
                   <div className="flex flex-col gap-3 justify-center items-center text-center py-2">
-                    <h1 className="text-2xl font-bold text-white underline underline-offset-8">Skill & Expertise</h1>
-                    <p className="text-[16px] font-normal text-white md:max-w-4xl lg:max-w-4xl leading-5">Over the past year, I've developed expertise in these tools and technology</p>
+                    <h1 className="text-2xl font-bold text-white underline underline-offset-8">Skills & Expertise</h1>
+                    <p className="text-[16px] font-normal text-white md:max-w-4xl lg:max-w-4xl leading-5">Over the past year, I've developed expertise in these tools and Technologies</p>
                 </div>
 
                 <div className="gap-3 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
