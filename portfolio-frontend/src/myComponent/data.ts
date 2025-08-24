@@ -9,7 +9,7 @@ export const projectCardDetails = [
     stack3: "Typescript",
     parag:
       "An Expense tracker web app for effective expense and income tracking",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/FollowTrack.git",
     live: "https://followtrack.onrender.com",
   },
   {
@@ -21,7 +21,7 @@ export const projectCardDetails = [
     stack2: "NodeJs",
     stack3: "Tailwindcss",
     parag: "An E-commerce store for a fast fashion brand",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/TrackStore.git",
     live: "https://trackstores.netlify.app",
   },
   {
@@ -32,7 +32,7 @@ export const projectCardDetails = [
     stack: "ReactJs",
     stack2: "Tailwindcss",
     parag: "A website built for an Estate Company",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/Estatein-Properties.git",
     live: "https://estateinproperties.netlify.app",
   },
   {
@@ -44,7 +44,7 @@ export const projectCardDetails = [
     stack2: "Tailwindcss",
     stack3: "Typescript",
     parag: "An event awareness web application, built for my school",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/Eventley.git",
     live: "https://eventley.onrender.com",
   },
   {
@@ -56,7 +56,7 @@ export const projectCardDetails = [
     stack2: "Tailwindcss",
     stack3: "Typescript",
     parag: "A website built for a Marketing Agency Company",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/SquareUp.git",
     live: "https://squareagency.netlify.app",
   },
   // {
@@ -81,7 +81,7 @@ export const projectCardDetails = [
     stack2: "CSS",
     stack3: "Javascript",
     parag: "A website built for a team Management firm",
-    code: "https://github.com/iconicconcept",
+    code: "https://github.com/iconicconcept/managing-team.io.git",
     live: "https://iconicconcept.github.io/managing-team.io/",
   },
   // {

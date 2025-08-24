@@ -1,10 +1,107 @@
 @import "tailwindcss";
 
-
-html body{
-    overflow-x: hidden  
+html body {
+  overflow-x: hidden;
 }
 
-body{
-    overflow-x: hidden
+body {
+  overflow-x: hidden;
+}
+
+.profile-image-container {
+  position: relative;
+  height: 297px;
+  width: 257px;
+  border-radius: 15px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image-container::before {
+  content: "";
+  position: absolute;
+  display: flex;
+  top: -5px;
+  left: -5px;
+  border-radius: 15px;
+  border: 3px solid transparent;
+  border-radius: 20px;
+  /* background: conic-gradient(#4ade80, #22d3ee, #818cf8, #4ade80, #22d3ee); */
+  background: conic-gradient(#00f, #0ff, #00f);
+  animation: rotateGlow 4s linear infinite;
+  /* display: block; */
+  height: 297px;
+  width: 257px;
+  z-index: 1;
+}
+
+@keyframes rotateGlow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.circle {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: rgb(144, 238, 144, 0.2);
+  border-radius: 50%;
+  animation: move 8s linear infinite;
+}
+
+.circle:nth-child(1) {
+  top: 5%;
+  left: 5%;
+  animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+  top: 50%;
+  left: 30%;
+  animation-delay: 2s;
+}
+
+.circle:nth-child(3) {
+  top: 10%;
+  right: 20%;
+  animation-delay: 4s;
+}
+
+.circle:nth-child(4) {
+  bottom: 10%;
+  left: 80%;
+  animation-delay: 6s;
+}
+
+@keyframes move {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-2000px, 100px);
+  }
+  50% {
+    transform: translate(150px, -150px);
+  }
+  75% {
+    transform: translate(-100px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.glow-button{
+    transition: box-shadow 0.3 ease !important;
+    cursor: pointer !important;
+}
+
+.glow-button:hover{
+    box-shadow: 0 0 10px rgb(5, 81, 5), 0 0 20px greenyellow, 0 0 30px rgb(44, 123, 44) !important;
 }
