@@ -138,13 +138,13 @@ const Home = ({ text }: Text) => {
                     </div> */}
 
             <div className="flex justify-center items-center md:ml-12 lg:ml-12">
-              <div className="profile-image-container">
+              {/* <div className="profile-image-container"> */}
                 <img
                   src="/user.jpg"
                   className="z-2 relative h-[97%] w-[97%] rounded-2xl"
                   alt="Profile"
                 />
-              </div>
+              {/* </div> */}
             </div>
           </div>
         </div>
