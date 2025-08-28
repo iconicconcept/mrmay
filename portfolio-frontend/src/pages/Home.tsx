@@ -129,23 +129,23 @@ const Home = ({ text }: Text) => {
                 </button>
               </div>
             </div>
-            {/* <div className="flex justify-center items-center md:ml-12 lg:ml-12">
-                        <div className="h-74 w-64 border-2 border-green-500 rounded-2xl flex justify-center items-center">
-                            <div className="bg-green-500 h-70 w-60 rounded-2xl ">
-                                <img src="/user.jpg" className="h-full rounded-2xl" alt="Profile" />
-                            </div>
-                        </div>
-                    </div> */}
-
             <div className="flex justify-center items-center md:ml-12 lg:ml-12">
-              {/* <div className="profile-image-container"> */}
+                  <div className="h-74 w-64 border-2 border-green-500 rounded-2xl flex justify-center items-center">
+                      <div className="bg-green-500 h-70 w-60 rounded-2xl ">
+                          <img src="/user.jpg" className="h-full rounded-2xl" alt="Profile" />
+                      </div>
+                  </div>
+              </div>
+
+            {/* <div className="flex justify-center items-center md:ml-12 lg:ml-12">
+              <div className="profile-image-container">
                 <img
                   src="/user.jpg"
                   className="z-2 relative h-[97%] w-[97%] rounded-2xl"
                   alt="Profile"
                 />
-              {/* </div> */}
-            </div>
+              </div>
+            </div> */}
           </div>
         </div>
       </section>
