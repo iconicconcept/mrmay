@@ -498,7 +498,7 @@ const Home = ({ text }: Text) => {
             MrMay
           </h1>
           <p className="text-sm text-center leading-5">
-            Copyright © 2025, Mubaraq Allamalyekeen. All Rights Reserved.
+            Copyright © 2026, Mubaraq Allamalyekeen. All Rights Reserved.
           </p>
         </div>
       </footer>
