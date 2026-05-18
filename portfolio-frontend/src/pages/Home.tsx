@@ -104,7 +104,7 @@ const Home = ({ text }: Text) => {
             <span className="circle"></span>
           </div>
           <Header />
-          <div className="grid mt-12 md:mt-0 lg:mt-20 items-start gap-12 md:gap-0 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 h-auto md:h-auto lg:h-auto">
+          <div className="grid mt-12 md:mt-0 lg:mt-20 mb-5 lg:mb-0 items-start gap-12 md:gap-0 lg:gap-0 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 h-auto md:h-auto lg:h-auto">
             <div className="flex flex-col items-start gap-5 text-start">
               <div
                 className={`inline-flex items-center gap-3 rounded-full border px-3 py-2 transition-colors duration-300 ${
@@ -148,11 +148,11 @@ const Home = ({ text }: Text) => {
               >
                 {displayedText}
               </p>
-              <div className="flex w-max flex-row gap-3">
+              <div className="flex w-max flex-row gap-3 relative z-10">
                 <a
                   href="/Mubaraq-Resume.pdf"
-                  download="Mubaraq's Resume"
-                  className={`px-5 text-white py-3 rounded-[7px] font-semibold text-base md:text-lg transition-all duration-300 inline-flex items-center justify-center hover:scale-105 ${
+                  download="Mubaraq-Resume.pdf"
+                  className={`px-5 text-white py-3 cursor-pointer rounded-[7px] font-semibold text-base md:text-lg transition-all duration-300 inline-flex items-center justify-center hover:scale-105 ${
                     isDark
                       ? "bg-green-600 hover:bg-green-500"
                       : "bg-green-800 hover:bg-green-600"
@@ -160,21 +160,36 @@ const Home = ({ text }: Text) => {
                 >
                   Check Resume
                 </a>
-                <button
+                <Link
+                  to="Contact"
+                  smooth={true}
+                  duration={500}
                   className={`px-5 text-white py-3 rounded-[7px] font-semibold cursor-pointer text-base md:text-lg transition-all duration-300 hover:scale-105 ${
                     isDark
                       ? "bg-green-500 hover:bg-green-400"
                       : "bg-green-500 hover:bg-green-400"
                   }`}
                 >
-                  <Link to="Contact" smooth={true} duration={500}>
-                    Contact Me
-                  </Link>
-                </button>
+                  Contact Me
+                </Link>
+                {/* <button
+                  onClick={() => {
+                    document
+                      .getElementById("Contact")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className={`px-5 text-white py-3 rounded-[7px] font-semibold cursor-pointer text-base md:text-lg transition-all duration-300 hover:scale-105 ${
+                    isDark
+                      ? "bg-green-500 hover:bg-green-400"
+                      : "bg-green-500 hover:bg-green-400"
+                  }`}
+                >
+                  Contact Me
+                </button> */}
               </div>
             </div>
             <div
-              className={`flex justify-center items-center md:ml-12 lg:ml-12 transition-colors duration-300`}
+              className={`flex justify-center items-center md:ml-12 lg:ml-12 lg:mt-22 transition-colors duration-300`}
             >
               <div
                 className={`h-74 w-64 border-2 rounded-2xl flex justify-center items-center transition-colors duration-300 ${
@@ -451,7 +466,9 @@ const Home = ({ text }: Text) => {
                         <>
                           {item.lock === "code" ? (
                             <button
-                              onClick={() => toast("Client undisclosed project")}
+                              onClick={() =>
+                                toast("Client undisclosed project")
+                              }
                               className={`px-5 rounded-[8px] font-normal py-2 curosr-pointer text-white transition-all duration-300 hover:scale-105 ${
                                 isDark
                                   ? "bg-green-600 hover:bg-green-500"
@@ -549,7 +566,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  HTML, CSS, Javascript, Reactjs, Nextjs, Typescript
+                  HTML, CSS, Javascript, Reactjs, Nextjs, Typescript, Talwindcss
                 </p>
               </div>
             </div>
@@ -570,7 +587,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  NodeJS, Expressjs
+                  NodeJS, Golang, Expressjs, Nestjs
                 </p>
               </div>
             </div>
@@ -591,7 +608,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  MongoDB
+                  MongoDB, PostgreSQL
                 </p>
               </div>
             </div>
@@ -639,7 +656,7 @@ const Home = ({ text }: Text) => {
               </h1>
               <div className="flex gap-4">
                 <a
-                  href="https://x.com/Icon_mubaraq?s=09"
+                  href="https://x.com/mrmay159"
                   target="_blank"
                   className={`p-2 rounded-full transition-all duration-300 hover:scale-110 ${
                     isDark
@@ -663,9 +680,7 @@ const Home = ({ text }: Text) => {
                   <Github />{" "}
                 </a>
                 <a
-                  href="www.linkedin.com/in/
-                  mubaraq-allamalyekeen-102799252
-                  "
+                  href="https://www.linkedin.com/in/mubaraq-allamalyekeen-102799252"
                   target="_blank"
                   className={`p-2 rounded-full transition-all duration-300 hover:scale-110 ${
                     isDark
@@ -836,7 +851,7 @@ const Home = ({ text }: Text) => {
 
       <footer
         className={`w-full h-max transition-colors duration-300 ${
-          isDark ? "bg-emerald-950 border-t border-green-400" : "bg-green-100"
+          isDark ? "bg-emerald-950 border-t border-green-400" : "bg-green-100 border-t border-green-400"
         }`}
         id="Footer"
       >
@@ -853,7 +868,8 @@ const Home = ({ text }: Text) => {
               isDark ? "text-slate-400" : "text-slate-600"
             }`}
           >
-            Copyright © {new Date().getFullYear()}, Mubaraq Allamalyekeen. All Rights Reserved.
+            Copyright © {new Date().getFullYear()}, Mubaraq Allamalyekeen. All
+            Rights Reserved.
           </p>
         </div>
       </footer>

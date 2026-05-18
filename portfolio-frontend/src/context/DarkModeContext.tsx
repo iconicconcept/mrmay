@@ -1,34 +1,38 @@
-import React, { createContext, useContext, useState, useEffect } from 'react';
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 interface DarkModeContextType {
   isDark: boolean;
   toggleDarkMode: () => void;
 }
 
-const DarkModeContext = createContext<DarkModeContextType | undefined>(undefined);
+const DarkModeContext = createContext<DarkModeContextType | undefined>(
+  undefined,
+);
 
-export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
   const [isDark, setIsDark] = useState(() => {
     // Check localStorage first
-    const saved = localStorage.getItem('darkMode');
+    const saved = localStorage.getItem("darkMode");
     if (saved !== null) {
       return JSON.parse(saved);
     }
     // Fallback to system preference
-    return window.matchMedia('(prefers-color-scheme: dark)').matches;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
   });
 
   useEffect(() => {
-    localStorage.setItem('darkMode', JSON.stringify(isDark));
+    localStorage.setItem("darkMode", JSON.stringify(isDark));
     if (isDark) {
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     } else {
-      document.documentElement.classList.remove('dark');
+      document.documentElement.classList.remove("dark");
     }
   }, [isDark]);
 
   const toggleDarkMode = () => {
-    setIsDark((prev) => !prev);
+    setIsDark((prev: boolean) => !prev);
   };
 
   return (
@@ -41,7 +45,7 @@ export const DarkModeProvider: React.FC<{ children: React.ReactNode }> = ({ chil
 export const useDarkMode = () => {
   const context = useContext(DarkModeContext);
   if (!context) {
-    throw new Error('useDarkMode must be used within DarkModeProvider');
+    throw new Error("useDarkMode must be used within DarkModeProvider");
   }
   return context;
 };
