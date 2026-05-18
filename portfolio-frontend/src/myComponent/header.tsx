@@ -12,7 +12,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks: NavLink[] = [
-    { label: "Resume", href: "/Mubaraq-Resume.pdf", isExternal: true },
+    { label: "Resume", href: "/Mubaraq-Resume-original.pdf", isExternal: true },
     { label: "Projects", to: "Projects" },
     { label: "Skills", to: "Skills" },
     { label: "Contact", to: "Contact" },

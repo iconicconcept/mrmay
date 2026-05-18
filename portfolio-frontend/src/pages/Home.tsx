@@ -150,7 +150,7 @@ const Home = ({ text }: Text) => {
               </p>
               <div className="flex w-max flex-row gap-3 relative z-10">
                 <a
-                  href="/Mubaraq-Resume.pdf"
+                  href="/Mubaraq-Resume-original.pdf"
                   download="Mubaraq-Resume.pdf"
                   className={`px-5 text-white py-3 cursor-pointer rounded-[7px] font-semibold text-base md:text-lg transition-all duration-300 inline-flex items-center justify-center hover:scale-105 ${
                     isDark
@@ -851,7 +851,9 @@ const Home = ({ text }: Text) => {
 
       <footer
         className={`w-full h-max transition-colors duration-300 ${
-          isDark ? "bg-emerald-950 border-t border-green-400" : "bg-green-100 border-t border-green-400"
+          isDark
+            ? "bg-emerald-950 border-t border-green-400"
+            : "bg-green-100 border-t border-green-400"
         }`}
         id="Footer"
       >
