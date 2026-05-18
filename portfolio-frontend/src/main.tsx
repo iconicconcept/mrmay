@@ -4,12 +4,15 @@ import './index.css'
 import { BrowserRouter } from 'react-router'
 import App from './App.tsx'
 import { Toaster } from 'react-hot-toast'
+import { DarkModeProvider } from './context/DarkModeContext'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
-    <Toaster />
-      <App />
-    </BrowserRouter>
+    <DarkModeProvider>
+      <BrowserRouter>
+        <Toaster />
+        <App />
+      </BrowserRouter>
+    </DarkModeProvider>
   </StrictMode>,
 )
