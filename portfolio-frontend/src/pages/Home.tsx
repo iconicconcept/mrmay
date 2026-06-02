@@ -150,15 +150,15 @@ const Home = ({ text }: Text) => {
               </p>
               <div className="flex w-max flex-row gap-3 relative z-10">
                 <a
-                  href="/Mubaraq-Resume-original.pdf"
-                  download="Mubaraq-Resume.pdf"
+                  href="/Mubaraq_CV.pdf"
+                  download="Mubaraq-CV.pdf"
                   className={`px-5 text-white py-3 cursor-pointer rounded-[7px] font-semibold text-base md:text-lg transition-all duration-300 inline-flex items-center justify-center hover:scale-105 ${
                     isDark
                       ? "bg-green-600 hover:bg-green-500"
                       : "bg-green-800 hover:bg-green-600"
                   }`}
                 >
-                  Check Resume
+                  Download CV
                 </a>
                 <Link
                   to="Contact"
@@ -204,7 +204,7 @@ const Home = ({ text }: Text) => {
                   }`}
                 >
                   <img
-                    src="/Mubaraq-shot.jpg"
+                    src="/mubaraq1.png"
                     className="h-full w-full rounded-2xl"
                     alt="Profile"
                   />
@@ -587,7 +587,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  NodeJS, Golang, Expressjs, Nestjs
+                  NodeJS, Expressjs, Nestjs, Firebase
                 </p>
               </div>
             </div>
@@ -608,7 +608,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  MongoDB, PostgreSQL
+                  MongoDB, PostgreSQL, NoSQL, Firebase
                 </p>
               </div>
             </div>
