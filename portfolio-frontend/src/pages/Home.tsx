@@ -122,7 +122,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-green-200" : "text-green-800"
                   }`}
                 >
-                  Website developer
+                  Full-Stack Developer
                 </span>
               </div>
               <h1
@@ -172,20 +172,6 @@ const Home = ({ text }: Text) => {
                 >
                   Contact Me
                 </Link>
-                {/* <button
-                  onClick={() => {
-                    document
-                      .getElementById("Contact")
-                      ?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className={`px-5 text-white py-3 rounded-[7px] font-semibold cursor-pointer text-base md:text-lg transition-all duration-300 hover:scale-105 ${
-                    isDark
-                      ? "bg-green-500 hover:bg-green-400"
-                      : "bg-green-500 hover:bg-green-400"
-                  }`}
-                >
-                  Contact Me
-                </button> */}
               </div>
             </div>
             <div
@@ -211,21 +197,11 @@ const Home = ({ text }: Text) => {
                 </div>
               </div>
             </div>
-
-            {/* <div className="flex justify-center items-center md:ml-12 lg:ml-12">
-              <div className="profile-image-container">
-                <img
-                  src="/user.jpg"
-                  className="z-2 relative h-[97%] w-[97%] rounded-2xl"
-                  alt="Profile"
-                />
-              </div>
-            </div> */}
           </div>
         </div>
       </section>
 
-      {/* `second section` */}
+      {/* second section */}
       <section
         className={`w-full h-max transition-colors duration-300 ${
           isDark ? "bg-emerald-950" : "bg-green-100"
@@ -288,7 +264,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-slate-700"
                   }`}
                 >
-                  Building Responsive and scalable full-stack application
+                  Building responsive and scalable full-stack applications
                 </p>
               </div>
             </div>
@@ -325,8 +301,8 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-slate-700"
                   }`}
                 >
-                  Building Responsible and user-friendly web applications with
-                  modern Technologies
+                  Building responsive and user-friendly web applications with
+                  modern technologies
                 </p>
               </div>
             </div>
@@ -363,7 +339,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-slate-700"
                   }`}
                 >
-                  Building solutions dedicated to solve complex technical
+                  Building solutions dedicated to solving complex technical
                   challenges
                 </p>
               </div>
@@ -392,18 +368,16 @@ const Home = ({ text }: Text) => {
             {projectCardDetails.map((item) => (
               <div key={item.id}>
                 <div
-                  className={`border h-max md:h-93 lg:h-93 px-5 py-6 flex flex-col justify-between rounded-r rounded-b-lg transition-colors duration-300 ${
+                  className={`border h-max md:h-97 lg:h-97 px-5 py-6 flex flex-col justify-between rounded-r rounded-b-lg transition-colors duration-300 ${
                     isDark ? "bg-emerald-950 border-emerald-700" : "bg-white"
                   }`}
                   data-aos="fade-up"
                 >
-                  {/* <div className="w-full cover h-20"> */}
                   <img
                     src={item.image}
                     alt={item.alt}
                     className="w-full h-35 object-cover border-3 rounded border-green-600"
                   />
-                  {/* </div> */}
                   <div className="flex flex-col gap-2 mt-2">
                     <h1
                       className={`font-semibold text-2xl transition-colors duration-300 ${
@@ -452,7 +426,7 @@ const Home = ({ text }: Text) => {
                       {item.lock === "all" ? (
                         <button
                           onClick={() => toast("Client undisclosed project")}
-                          className={`px-5 rounded-[8px] font-normal py-2 curosr-pointer text-white transition-all duration-300 hover:scale-105 ${
+                          className={`px-5 rounded-[8px] font-normal py-2 cursor-pointer text-white transition-all duration-300 hover:scale-105 ${
                             isDark
                               ? "bg-green-600 hover:bg-green-500"
                               : "bg-emerald-950 hover:bg-emerald-900"
@@ -469,7 +443,7 @@ const Home = ({ text }: Text) => {
                               onClick={() =>
                                 toast("Client undisclosed project")
                               }
-                              className={`px-5 rounded-[8px] font-normal py-2 curosr-pointer text-white transition-all duration-300 hover:scale-105 ${
+                              className={`px-5 rounded-[8px] font-normal py-2 cursor-pointer text-white transition-all duration-300 hover:scale-105 ${
                                 isDark
                                   ? "bg-green-600 hover:bg-green-500"
                                   : "bg-emerald-950 hover:bg-emerald-900"
@@ -481,7 +455,7 @@ const Home = ({ text }: Text) => {
                             </button>
                           ) : (
                             <button
-                              className={`px-5 rounded-[8px] font-normal py-2 curosr-pointer text-white transition-all duration-300 hover:scale-105 ${
+                              className={`px-5 rounded-[8px] font-normal py-2 cursor-pointer text-white transition-all duration-300 hover:scale-105 ${
                                 isDark
                                   ? "bg-green-600 hover:bg-green-500"
                                   : "bg-emerald-950 hover:bg-emerald-900"
@@ -499,7 +473,7 @@ const Home = ({ text }: Text) => {
                           )}
 
                           <button
-                            className={`px-5 rounded-[8px] font-normal border py-2 curosr-pointer text-white flex items-center gap-1 transition-all duration-300 hover:scale-105 ${
+                            className={`px-5 rounded-[8px] font-normal border py-2 cursor-pointer text-white flex items-center gap-1 transition-all duration-300 hover:scale-105 ${
                               isDark
                                 ? "bg-green-500 border-green-400 hover:bg-green-400"
                                 : "bg-green-600 border-green-600 hover:bg-green-500"
@@ -518,6 +492,15 @@ const Home = ({ text }: Text) => {
                         </>
                       )}
                     </div>
+                    {item.note && (
+                      <p
+                        className={`text-xs italic mt-1 transition-colors duration-300 ${
+                          isDark ? "text-slate-400" : "text-slate-500"
+                        }`}
+                      >
+                        {item.note}
+                      </p>
+                    )}
                   </div>
                 </div>
               </div>
@@ -544,7 +527,7 @@ const Home = ({ text }: Text) => {
             </h1>
             <p className="text-[16px] font-normal text-white md:max-w-4xl lg:max-w-4xl leading-5">
               Over the past year, I've developed expertise in these tools and
-              Technologies
+              technologies
             </p>
           </div>
 
@@ -566,7 +549,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  HTML, CSS, Javascript, Reactjs, Nextjs, Typescript, Talwindcss
+                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Tailwind CSS
                 </p>
               </div>
             </div>
@@ -587,7 +570,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  NodeJS, Expressjs, Nestjs, Firebase
+                  Node.js, Express.js, NestJS, Firebase
                 </p>
               </div>
             </div>
@@ -641,8 +624,8 @@ const Home = ({ text }: Text) => {
                 isDark ? "text-slate-300" : "text-emerald-950"
               }`}
             >
-              Over the past year, I've developed expertise in these tools and
-              technology.
+              Have a project in mind? I'd love to hear about it — reach out and
+              let's build something great together.
             </p>
           </div>
           <div className="flex flex-col gap-4 items-center">
@@ -880,5 +863,3 @@ const Home = ({ text }: Text) => {
 };
 
 export default Home;
-
-// https://www.instagram.com/icon_mubaraq/
