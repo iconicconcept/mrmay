@@ -56,7 +56,7 @@ export const projectCardDetails = [
     note: "Client project — code private under NDA",
   },
   {
-    id: "5",
+    id: "6",
     alt: "e-commerce store",
     image: "/trackstore.png",
     head: "TrackStore",
@@ -81,7 +81,7 @@ export const projectCardDetails = [
   //   lock: "all",
   // },
   {
-    id: "6",
+    id: "5",
     alt: "estatein properties",
     image: "/stateproperties.png",
     head: "Estatein Properties",
