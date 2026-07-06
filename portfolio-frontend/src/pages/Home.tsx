@@ -549,7 +549,8 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Tailwind CSS
+                  HTML, CSS, JavaScript, React.js, Next.js, TypeScript, Tailwind
+                  CSS
                 </p>
               </div>
             </div>
@@ -570,7 +571,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  Node.js, Express.js, NestJS, Firebase
+                  Node.js, Express.js, NestJS, Supabase
                 </p>
               </div>
             </div>
@@ -591,7 +592,7 @@ const Home = ({ text }: Text) => {
                     isDark ? "text-slate-300" : "text-white"
                   }`}
                 >
-                  MongoDB, PostgreSQL, NoSQL, Firebase
+                  MongoDB, PostgreSQL, NoSQL, Supabase
                 </p>
               </div>
             </div>
